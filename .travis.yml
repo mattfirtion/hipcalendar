@@ -40,7 +40,6 @@ deploy:
   api-key: $HEROKU_API_KEY
   app: hipcalendar
   on:
-    tags: true
     branches:
       only: master
 notifications:
