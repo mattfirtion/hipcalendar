@@ -41,7 +41,8 @@ deploy:
   app: hipcalendar
   on:
     tags: true
-    all_branches: true
+    branches:
+      only: master
 notifications:
   webhooks:
     on_success: change  # options: [always|never|change] default: always
