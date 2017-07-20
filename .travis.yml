@@ -40,6 +40,9 @@ deploy:
   api-key:
     secure: $HEROKU_API_KEY
   app: hipcalendar
+  on:
+    tags: true
+    all_branches: true
 notifications:
   webhooks:
     on_success: change  # options: [always|never|change] default: always
