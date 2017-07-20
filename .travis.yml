@@ -40,8 +40,6 @@ deploy:
   api_key: $HEROKU_API_KEY
   app: hipcalendar
   on: $PROD_DEPLOY_BRANCH
-    branches:
-      only: master
 notifications:
   webhooks:
     on_success: change  # options: [always|never|change] default: always
