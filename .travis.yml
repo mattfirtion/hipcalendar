@@ -39,7 +39,7 @@ deploy:
   provider: heroku
   api_key: $HEROKU_API_KEY
   app: hipcalendar
-  on:
+  on: $PROD_DEPLOY_BRANCH
     branches:
       only: master
 notifications:
