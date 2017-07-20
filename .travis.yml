@@ -31,14 +31,13 @@ install:
   - yarn install
 script:
   - chmod +x mvnw
-  - ./mvnw clean test
+    #  - ./mvnw clean test
   - yarn test
 #  - ./mvnw com.heroku.sdk:heroku-maven-plugin:1.1.1:deploy -DskipTests -Pprod -Dheroku.appName=
   - ./mvnw clean package -DskipTests -Pprod
 deploy:
   provider: heroku
-  api-key:
-    secure: $HEROKU_API_KEY
+  api-key: $HEROKU_API_KEY
   app: hipcalendar
   on:
     tags: true
