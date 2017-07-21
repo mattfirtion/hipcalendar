@@ -31,7 +31,7 @@ install:
   - yarn install
 script:
   - chmod +x mvnw
-    #  - ./mvnw clean test
+  - ./mvnw clean test
   - yarn test
 #  - ./mvnw com.heroku.sdk:heroku-maven-plugin:1.1.1:deploy -DskipTests -Pprod -Dheroku.appName=
   - ./mvnw clean package -DskipTests -Pprod
