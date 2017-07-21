@@ -23,13 +23,12 @@ spring:
         type: none
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:h2:mem:calendar;DB_CLOSE_DELAY=-1
-        name:
-        username:
-        password:
+        url: jdbc:postgresql://localhost:5432/calendar
+        username: calendar
+        password: calendar
     jpa:
-        database-platform: io.github.jhipster.domain.util.FixedH2Dialect
-        database: H2
+        database-platform: io.github.jhipster.domain.util.FixedPostgreSQL82Dialect
+        database: POSTGRESQL
         open-in-view: false
         show-sql: false
         hibernate:
